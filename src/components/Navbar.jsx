@@ -11,6 +11,10 @@ justify-content:space-between;`
 const Left = styled.div`
 flex:1;
 `
+const Language = styled.span`
+font-size:14px;
+cursor: pointer;
+`
 const Center = styled.div`
 flex:1;`
 const Right = styled.div`
@@ -19,7 +23,8 @@ flex:1;`
 const Navbar = () => {
   return <Container>
     <Wrapper>
-      <Left>left</Left>
+      <Left>
+        <Language>EN</Language></Left>
       <Center>Center</Center>
       <Right>Right</Right>
     </Wrapper></Container>;
